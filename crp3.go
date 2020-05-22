@@ -18,6 +18,30 @@ import (
 	"fmt"
 )
 
+func score(str string) int {
+	// char freq in percent * 1000, english
+	//freq := map[string]int{
+	freq := map[byte]int{
+		'e': 11162,
+		't': 9356,
+		'a': 8497,
+		'r': 7587,
+		'i': 7546,
+		'o': 7507,
+		'n': 6749,
+		's': 6327,
+		'h': 6094,
+		'd': 4253,
+		'l': 4025,
+		'u': 2758,
+		'w': 2560,
+		'm': 2406,
+		'f': 2228,
+	}
+	fmt.Println(freq)
+	return len(str) // div by score
+}
+
 func main() {
 	fmt.Println("..")
 }
